@@ -6,19 +6,46 @@
 }
 
 body{
-    height: 100vh;
+    background-image: url('images/bjark-DZ975EkUJH0-unsplash.jpg'); 
+   
+       background-repeat: no-repeat;
+    background-size:cover;
+    /* overflow:hidden; */
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #eeacbf;
+    /* background-color: #fff; */
+}
+.fullCon{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+}
+.forecstD{
+    margin: 20px;
+    background-color: #d793ef;
+  
+
+}
+.weekF{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 .container{
-    position: relative;
-    width: 500px;
-    height: 105px;
-    background: rgb(255, 155, 155);
+    /* position: relative; */
+    width: auto;
+    height: auto;
+    background: rgb(255, 254, 254 ,0.5);
     padding: 20px 32px;
-    overflow: hidden;
+    /* overflow: hidden; */
     border-radius: 20px;
     font-family: 'Roboto' ,sans-serif ;
     transition: 0.7s ease-out;
@@ -169,4 +196,164 @@ body{
         scale: 1;
         opacity: 1;
     }
+}
+
+.container1 #myChart{
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgba(255, 255, 255,0.5);
+    height:300px;
+    width:600px;
+    color: black;
+
+}
+
+
+.future-forecast{
+    /* background: rgba(24,24,27,0.8); */
+    padding: 25px;
+    /* position: fixed; */
+    bottom: 0;
+    flex-wrap: wrap;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* overflow-y: hidden; */
+}
+
+.future-forecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding:15px;
+    /* padding-right: 40px; */
+    border-radius: 10px;
+    width: 180px;
+    background: rgba(0,0,0,0.2)
+}
+
+.future-forecast .today .day{
+    padding: 5px 15px;
+    background: #3c3c44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.future-forecast .today .temp{
+    font-size: 18px;
+    padding-top: 15px;
+}
+#dayFive{
+    display: grid;
+    grid-template-columns: repeat(3, 1.5fr);
+/* flex-wrap: wrap; */
+}
+
+/* ==============================================tablet==============================*/
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .container{
+        /* position: relative; */
+        width: 500px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background: rgb(255, 254, 254 ,0.5);
+        padding: 10px 12px;
+        margin-bottom: 10px;
+        /* overflow: hidden; */
+        border-radius: 20px;
+        font-family: 'Roboto' ,sans-serif ;
+        /* transition: 0.7s ease-out; */
+    }
+    .fullCon{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #dayFive{
+        display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+     }
+
+
+     .container1 #myChart{
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        /* display: flex; */
+        background-color: rgba(255, 255, 255,0.5);
+        height:300px;
+        width:400px;
+        color: black;
+    
+    }
+
+
+
+
+}
+
+
+/* ==============================================mobile==============================*/
+
+@media only screen and (max-width: 800px) {
+    .container{
+        /* position: relative; */
+        width: 500px;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        background: rgb(255, 254, 254 ,0.5);
+        padding: 10px 12px;
+        margin-bottom: 10px;
+        /* overflow: hidden; */
+        border-radius: 20px;
+        font-family: 'Roboto' ,sans-serif ;
+        /* transition: 0.7s ease-out; */
+    }
+    .fullCon{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #dayFive{
+        display: grid;
+    grid-template-columns: repeat(2, 1.5fr);
+     }
+
+
+     .container1 #myChart{
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        /* display: flex; */
+        background-color: rgba(255, 255, 255,0.5);
+        height:300px;
+        width:auto;
+        color: black;
+    
+    }
+
+
+
+
+}
+@media only screen and (max-width: 300px) {
+
+    #dayFive{
+        display: grid;
+    grid-template-columns: repeat(1, 1.5fr);
+     }
+
 }

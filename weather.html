@@ -6,28 +6,27 @@
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
     rel="stylesheet">
+   
     <link rel="stylesheet" href="weather.css">
     <title>Document</title>
 </head>
 <body>
-    
-    <div class="container">
+    <div class="fullCon">
+   <div class="container">
      
       
         <div class="searchBox">
             <i class="fa-solid fa-location-dot"></i>
             <input type="text" id="addressInput" placeholder="Enter your location..." />
             <button class="fa-solid fa-magnifying-glass"></button>
-            <button class="locationBtn"><i class="fa-solid fa-location-crosshairs"></i></button>           
         </div>
 
-    
-    
     <div class="notFound">
         <img src="images/404.png" >
         <p>Invalid location !</p>
     </div>
     <div class="weatherBox">
+        <p class="nomVille" style="font-size:25px;font-weight: bold;"></p>
         <img src="">
         <p class="temperature"></p>
         <p class="description"></p>
@@ -48,9 +47,28 @@
             </div>
         </div>
     </div>
+  
+
+</div> 
+
+        <div class="container1">
+            <canvas id="myChart" ></canvas>
+          
+            <div id="dayFive">
+             
+           
+        </div>
+      
+</div>
 </div>
 
+  
+    <script type="module" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
     <script type="module" src="weather.js"></script>
+    <!-- <script type="module" src="weatherLoc.js"></script> -->
 </body>
 </html>
+
+
+
